@@ -11,7 +11,7 @@ The project is inspired by and based on the [\_transcribe\_ project by cyberboy6
 - [Hardware](#hardware)
 - [Software](#software)
 - [Acknowledgments & Credits](#acknowledgments--credits)
-- [Differences & Improvements Over \_transcribe\_](#differences--improvements-over-_transcribe_)
+- [Differences From \_transcribe\_](#differences-from-\_transcribe\_)
 - [Future Work](#future-work)
 - [License](#license)
 
