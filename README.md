@@ -57,9 +57,9 @@ The project is inspired by and based on the [\_transcribe\_ project by cyberboy6
 ### Getting Started
 
 1. **Hardware**  
-Instructions to wire up the hardware can be found in [/hardware](/hardware/README.md)
+Instructions to wire up the hardware can be found in [/hardware](/hardware/README.md) (TODO)
 2. **Software**  
-Instructions to build and upload the software can be found in [/software](/software/README.md)
+Instructions to build and upload the software can be found in [/software](/software/README.md) (TODO)
 4. **Edit MIDI mappings and use your MIDI controller to control both your laptop (audio) and video mixer (video)**
 
 ## Acknowledgments & Credits
