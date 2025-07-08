@@ -1,15 +1,15 @@
-#include <Arduino.h>
-#include <USBHost_t36.h>
 #include "commands.h"
+#include "globals.h"
 #include "mappings.h"
 #include "midiEvents.h"
-#include "globals.h"
+#include <Arduino.h>
+#include <USBHost_t36.h>
 
 // Globals
 bool DEBUG = true;
 
 // Set the serial port
-HardwareSerialIMXRT& HWSERIAL = Serial1;
+HardwareSerialIMXRT &RS232C_SERIAL = Serial1;
 
 // USB MIDI
 USBHost myusb;
@@ -24,7 +24,7 @@ unsigned long lastTestSend = 0; // for timing the test command
 // --- Setup & Loop ---
 void setup() {
   Serial.begin(115200);
-  HWSERIAL.begin(9600, SERIAL_7O1);
+  RS232C_SERIAL.begin(9600, SERIAL_7O1);
 
   delay(1500); // Let USB devices power up
   myusb.begin();
@@ -37,7 +37,8 @@ void setup() {
   midi1.setHandleAfterTouchChannel(onAfterTouchChannel);
   midi1.setHandlePitchChange(onPitchChange);
 
-  if (DEBUG) Serial.println("Setup complete, debug mode ON");
+  if (DEBUG)
+    Serial.println("Setup complete, debug mode ON");
 }
 
 void loop() {
@@ -49,10 +50,10 @@ void loop() {
     if (millis() - lastTestSend > 2000) {
       lastTestSend = millis();
       strcpy(cmd, MX30_A_BUS_SOURCE_1); // example command from commands.h
-      sendCmd(HWSERIAL);
+      sendCmd(RS232C_SERIAL);
       delay(1000);
       strcpy(cmd, MX30_A_BUS_SOURCE_2); // example command from commands.h
-      sendCmd(HWSERIAL);
+      sendCmd(RS232C_SERIAL);
     }
   }
 }

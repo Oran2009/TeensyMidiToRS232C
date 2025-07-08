@@ -4,12 +4,13 @@
 extern char cmd[14];
 
 // Command construction function prototypes
-void setCmd(const char* inputCmd, uint8_t inputParam = 0);
-void setCmdNoReplace(const char* inputCmd);
-void setCmdSwitch(const char* inputCmd1, const char* inputCmd2, uint8_t switchIndex);
-void setCmdStep(const char* inputCmd, uint8_t param, uint8_t maxValue);
-void setCmdToggle(const char* inputCmd, uint8_t maxValue, uint8_t switchIndex);
-void sendCmd(HardwareSerialIMXRT& s);
+void setCmd(const char *inputCmd, uint8_t inputParam = 0);
+void setCmdNoReplace(const char *inputCmd);
+void setCmdSwitch(const char *inputCmd1, const char *inputCmd2,
+                  uint8_t switchIndex);
+void setCmdStep(const char *inputCmd, uint8_t param, uint8_t maxValue);
+void setCmdToggle(const char *inputCmd, uint8_t maxValue, uint8_t switchIndex);
+void sendCmd(HardwareSerialIMXRT &s);
 
 // commands (wip) for panasonic mx30/50/70:
 
@@ -29,7 +30,7 @@ void sendCmd(HardwareSerialIMXRT& s);
 
 #define MX30_STROBO "VDE:ASR~" // max 62
 #define MX30_MOSAIC "VDE:AMS~" // max 7
-#define MX30_PAINT "VDE:APN~" // max 30
+#define MX30_PAINT "VDE:APN~"  // max 30
 
 #define MX30_A_BUS_STROBO_OFF "VDE:ASROF"
 #define MX30_A_BUS_MOSAIC_OFF "VDE:AMSOF"
@@ -52,12 +53,10 @@ void sendCmd(HardwareSerialIMXRT& s);
 #define MX30_A_BUS_COLOR_CORRECT_ON "VCC:A*f*g"
 #define MX30_B_BUS_COLOR_CORRECT_ON "VCC:B*f*g"
 
-
 #define MX30_A_BUS_EFFECT_ON "VDE:AON"
 #define MX30_A_BUS_EFFECT_OFF "VDE:AOF"
 #define MX30_B_BUS_EFFECT_ON "VDE:BON"
 #define MX30_B_BUS_EFFECT_OFF "VDE:BOF"
-
 
 #define MX30_A_BUS_SOURCE_1 "VCP:A1"
 #define MX30_A_BUS_SOURCE_2 "VCP:A2"
