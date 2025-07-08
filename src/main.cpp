@@ -10,6 +10,7 @@ bool DEBUG = true;
 
 // Set the serial port
 HardwareSerialIMXRT &RS232C_SERIAL = Serial1;
+HardwareSerialIMXRT &MIDI_SERIAL = Serial2;
 
 // USB MIDI
 USBHost myusb;
@@ -25,6 +26,7 @@ unsigned long lastTestSend = 0; // for timing the test command
 void setup() {
   Serial.begin(115200);
   RS232C_SERIAL.begin(9600, SERIAL_7O1);
+  MIDI_SERIAL.begin(31250, SERIAL_8N1);
 
   delay(1500); // Let USB devices power up
   myusb.begin();
@@ -44,16 +46,5 @@ void setup() {
 void loop() {
   myusb.Task();
   midi1.read();
-
-  if (DEBUG) {
-    // Send a hardcoded command every 1 second
-    if (millis() - lastTestSend > 2000) {
-      lastTestSend = millis();
-      strcpy(cmd, MX30_A_BUS_SOURCE_1); // example command from commands.h
-      sendCmd(RS232C_SERIAL);
-      delay(1000);
-      strcpy(cmd, MX30_A_BUS_SOURCE_2); // example command from commands.h
-      sendCmd(RS232C_SERIAL);
-    }
-  }
+  readMidiFromDIN();
 }

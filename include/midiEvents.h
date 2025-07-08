@@ -8,3 +8,5 @@ void onProgramChange(byte channel, byte program);
 void onAfterTouchPoly(byte channel, byte note, byte velocity);
 void onAfterTouchChannel(byte channel, byte pressure);
 void onPitchChange(byte channel, int pitch);
+
+void readMidiFromDIN();

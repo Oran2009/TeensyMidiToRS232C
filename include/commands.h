@@ -10,7 +10,7 @@ void setCmdSwitch(const char *inputCmd1, const char *inputCmd2,
                   uint8_t switchIndex);
 void setCmdStep(const char *inputCmd, uint8_t param, uint8_t maxValue);
 void setCmdToggle(const char *inputCmd, uint8_t maxValue, uint8_t switchIndex);
-void sendCmd(HardwareSerialIMXRT &s);
+void sendCmd();
 
 // commands (wip) for panasonic mx30/50/70:
 
