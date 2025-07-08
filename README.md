@@ -25,7 +25,7 @@ The project is inspired by and based on the [\_transcribe\_ project by cyberboy6
   Used for its USB Host capability, multiple UARTs, and robust MIDI support.
 - [**USB Host Cable**](https://www.pjrc.com/store/cable_usb_host_t36.html)  
   Connects the MIDI controller to the Teensy’s USB Host pins.
-- **MAX3232 Board**  
+- [**MAX3232 Board**](https://www.amazon.com/dp/B0DC3DDM1K?ref=ppx_yo2ov_dt_b_fed_asin_title)  
   Converts Teensy’s TTL serial to RS-232C voltage levels for the video mixer.
 
 #### Extra Components
@@ -47,10 +47,14 @@ The project is inspired by and based on the [\_transcribe\_ project by cyberboy6
 
 - **USB Host MIDI Input**  
   Receives MIDI from any USB MIDI controller.
+- **5-Pin DIN MIDI Input**  
+  Receives MIDI from any 5-Pin DIN MIDI controller.
 - **RS-232C Serial Output**  
   Sends mapped commands to the video mixer.
 - **USB MIDI Device Output**  
   Forwards all MIDI messages to the connected laptop, enabling simultaneous audio and video control.
+- **5-Pin DIN MIDI Output**  
+  Forwards all MIDI messages to the 5-Pin MIDI Out.
 - **Improved Mapping System**  
   Easily swap, edit, and extend MIDI-to-RS232C mappings.
 
@@ -76,7 +80,7 @@ The \_transcribe\_ project provided the foundation for MIDI-to-serial video mixe
 | Feature/Aspect          | \_transcribe\_                                  | This Project (Teensy MIDI-to-RS232C)                           |
 |------------------------|--------------------------------------------------|----------------------------------------------------------------|
 | **Platform**           | Arduino Pro Micro (ATmega), USB Host Shield      | Teensy 4.1, built-in USB Host                                  |
-| **MIDI Input**         | USB Host Shield or 5-pin DIN                     | USB Host (plug-and-play), future 5-pin DIN planned             |
+| **MIDI Input**         | USB Host Shield or 5-pin DIN                     | USB Host (plug-and-play) or 5-pin DIN                          |
 | **Serial Output**      | TTL to RS232 via MAX232                          | TTL to RS232C via MAX3232                                      |
 | **Advantages**         | 5-pin DIN I/O, cheaper to produce, bidirectional | Improved and modular code structure, extensible mapping system |
 
@@ -84,8 +88,6 @@ The \_transcribe\_ project provided the foundation for MIDI-to-serial video mixe
 
 Possible improvements include:
 
-- **Full 5-pin DIN MIDI I/O**  
-  Add opto-isolated MIDI IN and MIDI OUT for extended MIDI compatibility.
 - **User-Friendly Mapping Editor**  
   Develop a GUI system for defining and swapping mappings.
 - **OLED/LED Status Display**  
