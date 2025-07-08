@@ -78,7 +78,7 @@ The \_transcribe\_ project provided the foundation for MIDI-to-serial video mixe
 | **Platform**           | Arduino Pro Micro (ATmega), USB Host Shield      | Teensy 4.1, built-in USB Host                                  |
 | **MIDI Input**         | USB Host Shield or 5-pin DIN                     | USB Host (plug-and-play) or 5-pin DIN                          |
 | **Serial Output**      | TTL to RS232 via MAX232                          | TTL to RS232C via MAX3232                                      |
-| **Advantages**         | 5-pin DIN I/O, cheaper to produce, bidirectional | Improved and modular code structure, extensible mapping system |
+| **Advantages**         | Cheaper to produce, bidirectional                | Improved and modular code structure, extensible mapping system |
 
 ## Future Work
 
