@@ -45,16 +45,12 @@ The project is inspired by and based on the [\_transcribe\_ project by cyberboy6
 
 ### Features
 
-- **USB Host MIDI Input**  
-  Receives MIDI from any USB MIDI controller.
-- **5-Pin DIN MIDI Input**  
-  Receives MIDI from any 5-Pin DIN MIDI controller.
+- **USB Host MIDI Input/Output**  
+  Receives/Sends MIDI from/to the USB port.
+- **5-Pin DIN MIDI Input/Output**  
+  Receives/Sends MIDI from/to the 5-Pin DIN MIDI IN/OUT.
 - **RS-232C Serial Output**  
   Sends mapped commands to the video mixer.
-- **USB MIDI Device Output**  
-  Forwards all MIDI messages to the connected laptop, enabling simultaneous audio and video control.
-- **5-Pin DIN MIDI Output**  
-  Forwards all MIDI messages to the 5-Pin MIDI Out.
 - **Improved Mapping System**  
   Easily swap, edit, and extend MIDI-to-RS232C mappings.
 
