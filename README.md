@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a hardware and software solution for converting MIDI messages from a controller into RS-232C serial commands to control a Panasonic WJ-MX30 (or similar) video mixer. It enables synchronized control of both audio (via MIDI -> laptop) and video (via MIDI -> RS-232C -> mixer), making it ideal for live performance, AV installations, or creative studio setups.
+This project is a hardware and software solution for converting MIDI messages from a controller into RS-232C serial commands to control a Panasonic WJ-MX30 (or similar) video mixer. It enables synchronized control of both audio (via MIDI -> laptop) and video (via MIDI -> RS-232C -> mixer), making it ideal for live performance.
 
 The project is inspired by and based on the [\_transcribe\_ project by cyberboy666](https://github.com/cyberboy666/_transcribe_), with code improvements and simplified hardware design to fit my personal setup.
 
@@ -57,9 +57,9 @@ The project is inspired by and based on the [\_transcribe\_ project by cyberboy6
 ### Getting Started
 
 1. **Hardware**  
-Instructions to wire up the hardware can be found in [/hardware](/hardware/README.md)
+Instructions to wire up the hardware can be found in [/hardware](/hardware/README.md) (TODO)
 2. **Software**  
-Instructions to build and upload the software can be found in [/software](/software/README.md)
+Instructions to build and upload the software can be found in [/software](/software/README.md) (TODO)
 4. **Edit MIDI mappings and use your MIDI controller to control both your laptop (audio) and video mixer (video)**
 
 ## Acknowledgments & Credits
