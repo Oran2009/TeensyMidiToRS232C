@@ -7,7 +7,6 @@
 
 // Externally defined in your main.cpp:
 extern void (*mapToCmd)(uint8_t, uint8_t, uint8_t, uint8_t);
-extern HardwareSerialIMXRT &MIDI_SERIAL; // Serial2 for MIDI OUT
 
 void onNoteOn(byte channel, byte note, byte velocity) {
   if (DEBUG) {

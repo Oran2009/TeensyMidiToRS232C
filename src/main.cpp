@@ -5,13 +5,6 @@
 #include <Arduino.h>
 #include <USBHost_t36.h>
 
-// Globals
-bool DEBUG = true;
-
-// Set the serial port
-HardwareSerialIMXRT &RS232C_SERIAL = Serial1;
-HardwareSerialIMXRT &MIDI_SERIAL = Serial2;
-
 // USB MIDI
 USBHost myusb;
 MIDIDevice_BigBuffer midi1(myusb);

@@ -1,8 +1,6 @@
 #pragma once
 #include <Arduino.h>
 
-extern char cmd[14];
-
 // Command construction function prototypes
 void setCmd(const char *inputCmd, uint8_t inputParam = 0);
 void setCmdNoReplace(const char *inputCmd);
