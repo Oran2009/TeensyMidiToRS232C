@@ -1,5 +1,10 @@
 # Teensy 4.1 MIDI-to-RS232C Video Mixer Interface
 
+<div>
+  <img src="/images/front.jpeg" height=350 />
+  <img src="/images/back.jpeg" height=350 />
+</div>
+
 ## Overview
 
 This project is a hardware and software solution for converting MIDI messages from a controller into RS-232C serial commands to control a Panasonic WJ-MX30 (or similar) video mixer. It enables synchronized control of both audio (via MIDI -> laptop) and video (via MIDI -> RS-232C -> mixer), making it ideal for live performance.
@@ -11,7 +16,6 @@ The project is inspired by and based on the [\_transcribe\_ project by cyberboy6
 - [Hardware](#hardware)
 - [Software](#software)
 - [Acknowledgments & Credits](#acknowledgments--credits)
-- [Differences From \_transcribe\_](#differences-from-\_transcribe\_)
 - [Future Work](#future-work)
 - [License](#license)
 
@@ -70,15 +74,6 @@ This project is based on and inspired by the [\_transcribe\_ project by cyberboy
 [cyberboy666 on GitHub](https://github.com/cyberboy666)
 
 The \_transcribe\_ project provided the foundation for MIDI-to-serial video mixer control and many of the command mapping ideas.  
-
-## Differences From \_transcribe\_
-
-| Feature/Aspect          | \_transcribe\_                                  | This Project (Teensy MIDI-to-RS232C)                           |
-|------------------------|--------------------------------------------------|----------------------------------------------------------------|
-| **Platform**           | Arduino Pro Micro (ATmega), USB Host Shield      | Teensy 4.1, built-in USB Host                                  |
-| **MIDI Input**         | USB Host Shield or 5-pin DIN                     | USB Host (plug-and-play) or 5-pin DIN                          |
-| **Serial Output**      | TTL to RS232 via MAX232                          | TTL to RS232C via MAX3232                                      |
-| **Advantages**         | Cheaper to produce, bidirectional                | Improved and modular code structure, extensible mapping system |
 
 ## Future Work
 
