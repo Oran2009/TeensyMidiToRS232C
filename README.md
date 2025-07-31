@@ -1,8 +1,8 @@
 # Teensy 4.1 MIDI-to-RS232C Video Mixer Interface
 
 <div>
-  <img src="/images/front.jpeg" height=350 />
-  <img src="/images/back.jpeg" height=350 />
+  <img src="/images/front.jpeg" width=45% />
+  <img src="/images/back.jpeg" width=45% />
 </div>
 
 ## Overview
